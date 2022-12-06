@@ -7,6 +7,8 @@ public class myClass {
 		System.out.println("Art");
 		
 		System.out.println();
+		
+		System.out.println("Art!");
 
 	}
 
