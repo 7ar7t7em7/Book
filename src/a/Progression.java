@@ -14,7 +14,7 @@ public class Progression {
 	
 	/** Default constructor. */
 	Progression() {
-		cur=first=0;;
+		cur=first=0;
 	}
 	
 	/**
@@ -40,5 +40,6 @@ public class Progression {
 	 System.out.print(" " + nextValue()); // print leading space before others
 	 System.out.println( ); // end the line
 	 }
-	
 }
+
+
