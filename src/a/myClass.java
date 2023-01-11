@@ -4,13 +4,8 @@ public class myClass {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Art");
-		
-		System.out.println();
-		
-		System.out.println("Art!");
-		System.out.println("Art!!");
-
+		int randomDate = (int) (Math.random()*100%30);
+		System.out.println(randomDate);
 	}
 
 }

@@ -6,33 +6,32 @@ package a;
 
 public class Progression {
 	
-	/** First value of progression. */
-	protected long first;
-	
-	/**Current value of progression. */
-	protected long cur;
+	/**  instance variable */
+	protected long current;
 	
 	/** Default constructor. */
 	Progression() {
-		cur=first=0;
+		this(0);
 	}
 	
-	/**
-	 * Resets the progression to the first value
-	 * @return first value
-	 * */
-	protected long firstValue() {
-		cur = first;
-		return cur;
+	/** Constructs progression with current start value*/
+	Progression(long start){
+		current = start;
 	}
 	
-	/**
-	 * Advances the progression to the next value
-	 * @return next value of the progression
-	 * */
-	protected long nextValue() {
-		return ++cur;
+	/**Advances the current value to the next value of the progression. */
+	protected void advance() {
+		current++;
 	}
+	
+	 /** Returns the next value of the progression. */
+	 public long nextValue( ) {
+	 long answer = current;
+	 advance( ); // this protected call is responsible for advancing the current value
+	 return answer;
+	 }
+	
+	
 	 /* Prints the next n values of the progression, separated by spaces. */
 	 public void printProgression(int n) {
 	 System.out.print(nextValue()); // print first value without leading space
